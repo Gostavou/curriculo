@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #9c4b4b;
+    text-shadow: 2px 2px 4px rgba(53, 14, 14, 0.5);
     
 }
 
@@ -10,7 +11,10 @@ body {
     width: 50%;
     height: auto;
     object-fit: cover;
-    border-radius: 20%;
+    border-radius: 25%;
+    border-color:  rgb(241, 217, 207);
+    border-style:groove;
+    
 }
 
 .conteudo-esquerda {
@@ -69,11 +73,12 @@ body {
     padding: 20px;
     margin-left: 30%;
     overflow-y: hidden;
-    background-color: rgb(241, 217, 207)
+    background-color: rgb(241, 217, 207);
 }
 
 .icone {
     display: flex;
+    margin-right: 8%;
 }
 
 #linkedin {
@@ -82,6 +87,10 @@ body {
 
 #facebook {
     margin-right: 25%;
+}
+
+#whatsapp{
+    margin-left: 25%;   
 }
 
 .titulo{
@@ -116,3 +125,7 @@ body {
     text-align: center;
     z-index: 1  ;
 }
+
+
+
+
