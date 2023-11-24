@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #9c4b4b;
+    
+}
+
+#foto {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.conteudo-esquerda {
+    color: white;
+    width: 30%;
+    background-color:#9c4b4b;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll; 
+    z-index: 2; 
+    scrollbar-width: thin;
+    transition: width 0.3s ease, padding 0.3s ease;
+    width: 30
+}
+.conteudo-esquerda::-webkit-scrollbar {
+    width: 1px; 
+}
+
+.dados {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.dado{
+    font-family: Cambria, sans-serif;
+}
+.campo {
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+.info{
+    margin-right:10%;
+    text-decoration: underline;
+    position: relative;
+    font-family:dejavu sans,sans-serif;
+}
+.info::after {
+    content: "";
+    position: absolute;
+    bottom: 7.5%; 
+    left: 0;
+    width: calc(100% - -40px); 
+    border-bottom: 2px solid white; 
+}
+
+.conteudo-direita {
+    flex: 1;
+    padding: 20px;
+    margin-left: 30%;
+    overflow-y: hidden;
+    background-color: rgb(241, 217, 207)
+}
+
+.icone {
+    display: flex;
+}
+
+#linkedin {
+    margin-right: 25%;
+}
+
+#facebook {
+    margin-right: 25%;
+}
+
+.titulo{
+    color: #9c4b4b;
+    font-family:Georgia, sans-serif ;
+}
+
+.desc{
+    font-family:garamond, sans-serif;
+}
+
+.conteudo-esquerda.expandido {
+    width: 40%; 
+    transition: width 0.3s ease; 
+}
+
+.conteudo-esquerda:hover {
+    width: 40%;
+    padding: 8px;
+}
+
+.footer-direito {
+    margin-top: 21px;
+    margin-bottom: -20px;
+    margin-right: -20px;
+    margin-left: -20px;
+    bottom: -10px;
+    right: 0;
+    padding: 6px;
+    background-color: #9c4b4b;
+    color: white;
+    text-align: center;
+    z-index: 1  ;
+}
